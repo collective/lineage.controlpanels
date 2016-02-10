@@ -11,7 +11,7 @@
   <browser:page
       name="overview-controlpanel"
       for="collective.lineage.interfaces.IChildSite"
-      class=".overview.OverviewControlPanel"
+      class="Products.CMFPlone.controlpanel.browser.overview.OverviewControlPanel"
       permission="plone.app.controlpanel.Overview"
       layer=".interfaces.IBrowserLayer"
       />
@@ -20,7 +20,7 @@
   <browser:page
       name="editing-controlpanel"
       for="collective.lineage.interfaces.IChildSite"
-      class=".editing.EditingControlPanel"
+      class="Products.CMFPlone.controlpanel.browser.editing.EditingControlPanel"
       permission="plone.app.controlpanel.Editing"
       layer=".interfaces.IBrowserLayer"
       />
@@ -29,7 +29,7 @@
   <browser:page
       name="filter-controlpanel"
       for="collective.lineage.interfaces.IChildSite"
-      class=".filter.FilterControlPanelView"
+      class="Products.CMFPlone.controlpanel.browser.filter.FilterControlPanelView"
       permission="plone.app.controlpanel.Filtering"
       layer=".interfaces.IBrowserLayer"
       />
@@ -38,7 +38,7 @@
   <browser:page
       name="tinymce-controlpanel"
       for="collective.lineage.interfaces.IChildSite"
-      class=".tinymce.TinyMCEControlPanel"
+      class="Products.CMFPlone.controlpanel.browser.tinymce.TinyMCEControlPanel"
       permission="plone.app.controlpanel.TinyMCE"
       layer=".interfaces.IBrowserLayer"
       />
@@ -47,7 +47,7 @@
   <browser:page
       name="language-controlpanel"
       for="collective.lineage.interfaces.IChildSite"
-      class=".language.LanguageControlPanel"
+      class="Products.CMFPlone.controlpanel.browser.language.LanguageControlPanel"
       permission="plone.app.controlpanel.Language"
       layer=".interfaces.IBrowserLayer"
       />
@@ -56,7 +56,7 @@
   <browser:page
       name="maintenance-controlpanel"
       for="collective.lineage.interfaces.IChildSite"
-      class=".maintenance.MaintenanceControlPanel"
+      class="Products.CMFPlone.controlpanel.browser.maintenance.MaintenanceControlPanel"
       permission="cmf.ManagePortal"
       layer=".interfaces.IBrowserLayer"
       />
@@ -65,7 +65,7 @@
   <browser:page
       name="mail-controlpanel"
       for="collective.lineage.interfaces.IChildSite"
-      class=".mail.MailControlPanel"
+      class="Products.CMFPlone.controlpanel.browser.mail.MailControlPanel"
       permission="cmf.ManagePortal"
       layer=".interfaces.IBrowserLayer"
       />
@@ -74,7 +74,7 @@
   <browser:page
       name="navigation-controlpanel"
       for="collective.lineage.interfaces.IChildSite"
-      class=".navigation.NavigationControlPanel"
+      class="Products.CMFPlone.controlpanel.browser.navigation.NavigationControlPanel"
       permission="plone.app.controlpanel.Navigation"
       layer=".interfaces.IBrowserLayer"
       />
@@ -83,7 +83,7 @@
   <browser:page
       name="search-controlpanel"
       for="collective.lineage.interfaces.IChildSite"
-      class=".search.SearchControlPanel"
+      class="Products.CMFPlone.controlpanel.browser.search.SearchControlPanel"
       permission="plone.app.controlpanel.Search"
       layer=".interfaces.IBrowserLayer"
       />
@@ -92,7 +92,7 @@
   <browser:page
       name="security-controlpanel"
       for="collective.lineage.interfaces.IChildSite"
-      class=".security.SecurityControlPanel"
+      class="Products.CMFPlone.controlpanel.browser.security.SecurityControlPanel"
       permission="plone.app.controlpanel.Security"
       layer=".interfaces.IBrowserLayer"
       />
@@ -101,7 +101,7 @@
   <browser:page
       name="site-controlpanel"
       for="collective.lineage.interfaces.IChildSite"
-      class=".site.SiteControlPanel"
+      class="Products.CMFPlone.controlpanel.browser.site.SiteControlPanel"
       permission="plone.app.controlpanel.Site"
       layer=".interfaces.IBrowserLayer"
       />
@@ -110,7 +110,7 @@
   <browser:page
       name="dateandtime-controlpanel"
       for="collective.lineage.interfaces.IChildSite"
-      class=".dateandtime.DateAndTimeControlPanel"
+      class="Products.CMFPlone.controlpanel.browser.dateandtime.DateAndTimeControlPanel"
       permission="plone.app.controlpanel.Site"
       layer=".interfaces.IBrowserLayer"
       />
@@ -119,7 +119,7 @@
   <browser:page
       name="content-controlpanel"
       for="collective.lineage.interfaces.IChildSite"
-      class=".types.TypesControlPanel"
+      class="Products.CMFPlone.controlpanel.browser.types.TypesControlPanel"
       permission="plone.app.controlpanel.Types"
       layer=".interfaces.IBrowserLayer"
       />
@@ -128,7 +128,7 @@
   <browser:page
       name="markup-controlpanel"
       for="collective.lineage.interfaces.IChildSite"
-      class=".markup.MarkupControlPanel"
+      class="Products.CMFPlone.controlpanel.browser.markup.MarkupControlPanel"
       permission="plone.app.controlpanel.Markup"
       layer=".interfaces.IBrowserLayer"
       />
@@ -137,14 +137,14 @@
   <browser:page
       name="syndication-controlpanel"
       for="collective.lineage.interfaces.IChildSite"
-      class=".syndication.SyndicationControlPanel"
+      class="Products.CMFPlone.controlpanel.browser.syndication.SyndicationControlPanel"
       permission="cmf.ManagePortal"
       layer=".interfaces.IBrowserLayer"
       />
   <browser:page
       name="syndication-settings"
       for="collective.lineage.interfaces.IChildSite"
-      class=".syndication.SyndicationControlPanel"
+      class="Products.CMFPlone.controlpanel.browser.syndication.SyndicationControlPanel"
       permission="cmf.ManagePortal"
       layer=".interfaces.IBrowserLayer"
       />
@@ -153,14 +153,14 @@
   <browser:page
       name="social-controlpanel"
       for="collective.lineage.interfaces.IChildSite"
-      class=".socialmedia.SocialControlPanel"
+      class="Products.CMFPlone.controlpanel.browser.socialmedia.SocialControlPanel"
       permission="plone.app.controlpanel.Site"
       layer=".interfaces.IBrowserLayer"
       />
   <browser:page
       name="imaging-controlpanel"
       for="collective.lineage.interfaces.IChildSite"
-      class=".imaging.ImagingControlPanel"
+      class="Products.CMFPlone.controlpanel.browser.imaging.ImagingControlPanel"
       permission="plone.app.controlpanel.Imaging"
       layer=".interfaces.IBrowserLayer"
       />
