@@ -25,15 +25,6 @@
       layer=".interfaces.IBrowserLayer"
       />
 
-  <!-- Filter Control Panel -->
-  <browser:page
-      name="filter-controlpanel"
-      for="collective.lineage.interfaces.IChildSite"
-      class="Products.CMFPlone.controlpanel.browser.filter.FilterControlPanelView"
-      permission="plone.app.controlpanel.Filtering"
-      layer=".interfaces.IBrowserLayer"
-      />
-
   <!-- TinyMCE Control Panel -->
   <browser:page
       name="tinymce-controlpanel"
@@ -49,15 +40,6 @@
       for="collective.lineage.interfaces.IChildSite"
       class="Products.CMFPlone.controlpanel.browser.language.LanguageControlPanel"
       permission="plone.app.controlpanel.Language"
-      layer=".interfaces.IBrowserLayer"
-      />
-
-  <!-- Maintenance Control Panel -->
-  <browser:page
-      name="maintenance-controlpanel"
-      for="collective.lineage.interfaces.IChildSite"
-      class="Products.CMFPlone.controlpanel.browser.maintenance.MaintenanceControlPanel"
-      permission="cmf.ManagePortal"
       layer=".interfaces.IBrowserLayer"
       />
 
@@ -88,15 +70,6 @@
       layer=".interfaces.IBrowserLayer"
       />
 
-  <!-- Security Control Panel -->
-  <browser:page
-      name="security-controlpanel"
-      for="collective.lineage.interfaces.IChildSite"
-      class="Products.CMFPlone.controlpanel.browser.security.SecurityControlPanel"
-      permission="plone.app.controlpanel.Security"
-      layer=".interfaces.IBrowserLayer"
-      />
-
   <!-- Site Control Panel -->
   <browser:page
       name="site-controlpanel"
@@ -115,37 +88,12 @@
       layer=".interfaces.IBrowserLayer"
       />
 
-  <!-- Types Control panel -->
-  <browser:page
-      name="content-controlpanel"
-      for="collective.lineage.interfaces.IChildSite"
-      class="Products.CMFPlone.controlpanel.browser.types.TypesControlPanel"
-      permission="plone.app.controlpanel.Types"
-      layer=".interfaces.IBrowserLayer"
-      />
-
   <!-- Markup Control Panel -->
   <browser:page
       name="markup-controlpanel"
       for="collective.lineage.interfaces.IChildSite"
       class="Products.CMFPlone.controlpanel.browser.markup.MarkupControlPanel"
       permission="plone.app.controlpanel.Markup"
-      layer=".interfaces.IBrowserLayer"
-      />
-
-  <!-- Syndication Control Panel -->
-  <browser:page
-      name="syndication-controlpanel"
-      for="collective.lineage.interfaces.IChildSite"
-      class="Products.CMFPlone.controlpanel.browser.syndication.SyndicationControlPanel"
-      permission="cmf.ManagePortal"
-      layer=".interfaces.IBrowserLayer"
-      />
-  <browser:page
-      name="syndication-settings"
-      for="collective.lineage.interfaces.IChildSite"
-      class="Products.CMFPlone.controlpanel.browser.syndication.SyndicationControlPanel"
-      permission="cmf.ManagePortal"
       layer=".interfaces.IBrowserLayer"
       />
 
@@ -157,6 +105,8 @@
       permission="plone.app.controlpanel.Site"
       layer=".interfaces.IBrowserLayer"
       />
+
+  <!-- Imaging Control Panel -->
   <browser:page
       name="imaging-controlpanel"
       for="collective.lineage.interfaces.IChildSite"

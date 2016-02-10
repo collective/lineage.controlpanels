@@ -16,6 +16,8 @@ Features
 Not available in Lineage Childsites
 -----------------------------------
 
+The following control panels change global settings. Therefore they are not available in subsites.
+
 - migrate-to-emaillogin
 - resourceregistry-controlpanel
 
@@ -31,6 +33,11 @@ Not available in Lineage Childsites
 - install_products
 - uninstall_products
 
+- security controlpanel
+- maintenance-controlpanel
+- filter-controlpanel
+- syndication-controlpanel
+- content-controlpanel
 
 
 Examples
