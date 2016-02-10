@@ -1,0 +1,6 @@
+[report]
+include =
+    src/lineage/*
+omit =
+    */test*
+    */upgrades/*
