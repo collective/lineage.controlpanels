@@ -118,14 +118,14 @@
 
   <genericsetup:registerProfile
       name="default"
-      title="lineage.controlpanels"
+      title="Lineage: Plone Controlpanels in Child Sites"
       directory="profiles/default"
-      description="Installs the lineage.controlpanels add-on."
+      description="Extension to allow child-site specific configurations with Plone controlpanels."
       provides="Products.GenericSetup.interfaces.EXTENSION"
       />
   <genericsetup:registerProfile
       name="uninstall"
-      title="lineage.controlpanels"
+      title="Lineage: Plone Controlpanels in Child Sites (uninstall)"
       directory="profiles/uninstall"
       description="Uninstalls the lineage.controlpanels add-on."
       provides="Products.GenericSetup.interfaces.EXTENSION"
