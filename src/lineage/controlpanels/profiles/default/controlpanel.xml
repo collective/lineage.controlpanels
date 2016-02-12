@@ -147,13 +147,6 @@
     i18n:attributes="title">
   <permission>Content rules: Manage rules</permission>
  </configlet>
- <configlet title="Syndication" action_id="syndication" appId="Plone"
-    category="plone-general" condition_expr="not:object/aq_parent/@@lineageutils/isChildSite"
-    icon_expr="string:$portal_url/rss.png"
-    url_expr="string:${portal_url}/@@syndication-controlpanel" visible="True"
-    i18n:attributes="title">
-  <permission>Plone Site Setup: Site</permission>
- </configlet>
  <configlet title="Resource Registries" action_id="resourceregistries" appId="Plone"
     category="plone-advanced" condition_expr="not:object/aq_parent/@@lineageutils/isChildSite"
     icon_expr=""
@@ -181,4 +174,78 @@
     i18n:attributes="title">
   <permission>Plone Site Setup: Imaging</permission>
  </configlet>
+
+  <!-- plone.app.discussion -->
+  <configlet
+      title="Discussion"
+      action_id="discussion"
+      appId="plone.app.discussion"
+      category="plone-general"
+      condition_expr=""
+      icon_expr="string:${portal_url}/discussionitem_icon.png"
+      url_expr="string:${object/aq_parent/absolute_url}/@@discussion-controlpanel"
+      visible="True"
+      i18n:attributes="title">
+          <permission>Manage portal</permission>
+  </configlet>
+
+  <!-- plone.app.theming -->
+  <configlet
+      title="Theming"
+      action_id="plone.app.theming"
+      appId="plone.app.theming"
+      category="plone-general"
+      condition_expr=""
+      url_expr="string:${object/aq_parent/absolute_url}/@@theming-controlpanel"
+      icon_expr="string:${portal_url}/++resource++plone.app.theming.gif"
+      visible="True"
+      i18n:attributes="title">
+          <permission>Plone Site Setup: Themes</permission>
+  </configlet>
+
+ <!-- does not work yet -->
+ <configlet title="Configuration Registry" action_id="plone.app.registry"
+    appId="plone.app.registry" category="plone-advanced" condition_expr="not:object/aq_parent/@@lineageutils/isChildSite"
+    url_expr="string:${portal_url}/portal_registry"
+    icon_expr="string:$portal_url/++resource++plone.app.registry/icon.png"
+    visible="True" i18n:attributes="title">
+  <permission>Manage portal</permission>
+ </configlet>
+
+ <!-- syndication controlpanel alters one portal tool attribute -->
+ <configlet title="Syndication" action_id="syndication" appId="Plone"
+    category="plone-general" condition_expr="not:object/aq_parent/@@lineageutils/isChildSite"
+    icon_expr="string:$portal_url/rss.png"
+    url_expr="string:${portal_url}/@@syndication-controlpanel" visible="True"
+    i18n:attributes="title">
+  <permission>Plone Site Setup: Site</permission>
+ </configlet>
+
+  <!-- DISALLOWED -->
+  <configlet
+      action_id="dexterity-types"
+      appId="Plone"
+      category="plone-content"
+      condition_expr="not:object/aq_parent/@@lineageutils/isChildSite"
+      icon_expr="string:$portal_url/document_icon.png"
+      title="Dexterity Content Types"
+      url_expr="string:${portal_url}/@@dexterity-types"
+      visible="True"
+      i18n:attributes="title">
+    <permission>Manage portal</permission>
+  </configlet>
+
+  <configlet
+      title="Caching"
+      action_id="plone.app.caching"
+      appId="plone.app.caching"
+      category="plone-advanced"
+      condition_expr="not:object/aq_parent/@@lineageutils/isChildSite"
+      icon_expr="string:$portal_url/++resource++plone.app.caching.gif"
+      url_expr="string:${portal_url}/@@caching-controlpanel"
+      visible="True"
+      i18n:attributes="title">
+          <permission>Manage portal</permission>
+  </configlet>
+
 </object>

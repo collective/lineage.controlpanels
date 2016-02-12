@@ -18,27 +18,26 @@ Not available in Lineage Childsites
 
 The following control panels change global settings. Therefore they are not available in subsites.
 
-- migrate-to-emaillogin
-- resourceregistry-controlpanel
 
-- usergroup-controlpanel
-- usergroup-userprefs
-- usergroup-groupprefs
-- usergroup-groupmembership
-- usergroup-usermembership
-- usergroup-groupdetails
+These controlpanels are disabled, because they alter the global Portal state through portal tools:
 
-- prefs_install_products_form
-- upgrade_products
-- install_products
-- uninstall_products
-
-- security controlpanel
-- maintenance-controlpanel
-- filter-controlpanel
-- syndication-controlpanel
 - content-controlpanel
+- dexterity-types
+- filter-controlpanel
+- maintenance-controlpanel
+- prefs_install_products_form
+- resourceregistry-controlpanel
+- security controlpanel
+- usergroup-groupprefs
+- usergroup-userprefs
 
+
+This is also disabled, but should probably fixed to work with local registries too:
+- portal_registry
+
+This one stores it's configuration in the registry but has changes one setting in portal_actions, which would affect all sites.
+Thus disabled.
+- syndication-controlpanel
 
 Examples
 --------

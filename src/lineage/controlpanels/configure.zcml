@@ -115,6 +115,15 @@
       layer=".interfaces.IBrowserLayer"
       />
 
+  <!-- Discussion Control Panel -->
+  <browser:page
+      name="discussion-controlpanel"
+      for="collective.lineage.interfaces.IChildSite"
+      class="plone.app.discussion.browser.controlpanel.DiscussionSettingsControlPanel"
+      permission="cmf.ManagePortal"
+      layer=".interfaces.IBrowserLayer"
+      />
+
 
   <genericsetup:registerProfile
       name="default"
