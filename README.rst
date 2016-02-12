@@ -2,24 +2,20 @@
    If you want to learn more about writing documentation, please check out: http://docs.plone.org/about/documentation_styleguide_addons.html
    This text does not appear on pypi or github. It is a comment.
 
-==============================================================================
+=====================
 lineage.controlpanels
-==============================================================================
+=====================
 
-Tell me what your product does
+.. warning::
+    THIS IS STILL EXPERIMENTAL CODE!
+    ... and wasn't used in production yet.
 
-Features
---------
-
-- Can be bullet points
+Allows Lineage child site specific configurations for plone.registry based controlpanels.
 
 Not available in Lineage Childsites
 -----------------------------------
 
 The following control panels change global settings. Therefore they are not available in subsites.
-
-
-These controlpanels are disabled, because they alter the global Portal state through portal tools:
 
 - content-controlpanel
 - dexterity-types
@@ -38,26 +34,6 @@ This is also disabled, but should probably fixed to work with local registries t
 This one stores it's configuration in the registry but has changes one setting in portal_actions, which would affect all sites.
 Thus disabled.
 - syndication-controlpanel
-
-Examples
---------
-
-This add-on can be seen in action at the following sites:
-- Is there a page on the internet where everybody can see the features?
-
-
-Documentation
--------------
-
-Full documentation for end users can be found in the "docs" folder, and is also available online at http://docs.plone.org/foo/bar
-
-
-Translations
-------------
-
-This product has been translated into
-
-- Klingon (thanks, K'Plai)
 
 
 Installation
@@ -81,7 +57,6 @@ Contribute
 
 - Issue Tracker: https://github.com/collective/lineage.controlpanels/issues
 - Source Code: https://github.com/collective/lineage.controlpanels
-- Documentation: https://docs.plone.org/foo/bar
 
 
 Support
