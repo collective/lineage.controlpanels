@@ -203,14 +203,31 @@
           <permission>Plone Site Setup: Themes</permission>
   </configlet>
 
- <!-- does not work yet -->
- <configlet title="Configuration Registry" action_id="plone.app.registry"
-    appId="plone.app.registry" category="plone-advanced" condition_expr="not:object/aq_parent/@@lineageutils/isChildSite"
-    url_expr="string:${portal_url}/portal_registry"
-    icon_expr="string:$portal_url/++resource++plone.app.registry/icon.png"
-    visible="True" i18n:attributes="title">
-  <permission>Manage portal</permission>
- </configlet>
+  <configlet
+      title="Configuration Registry"
+      action_id="plone.app.registry"
+      appId="plone.app.registry"
+      category="plone-advanced"
+      condition_expr="not:object/aq_parent/@@lineageutils/isChildSite"
+      url_expr="string:${portal_url}/portal_registry"
+      icon_expr="string:$portal_url/++resource++plone.app.registry/icon.png"
+      visible="True"
+      i18n:attributes="title">
+    <permission>Manage portal</permission>
+  </configlet>
+
+  <configlet
+      title="Configuration Registry"
+      action_id="plone.app.registry-lineage"
+      appId="plone.app.registry"
+      category="plone-advanced"
+      condition_expr="object/aq_parent/@@lineageutils/isChildSite"
+      url_expr="string:${object/aq_parent/absolute_url}/lineage_registry"
+      icon_expr="string:$portal_url/++resource++plone.app.registry/icon.png"
+      visible="True"
+      i18n:attributes="title">
+    <permission>Manage portal</permission>
+  </configlet>
 
  <!-- syndication controlpanel alters one portal tool attribute -->
  <configlet title="Syndication" action_id="syndication" appId="Plone"
