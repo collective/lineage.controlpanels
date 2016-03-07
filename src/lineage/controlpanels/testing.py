@@ -7,14 +7,19 @@ from plone.app.testing import IntegrationTesting
 from plone.app.testing import PloneSandboxLayer
 from plone.testing import z2
 
-import lineage.controlpanels
-
 
 class BrowserLayer(PloneSandboxLayer):
 
     defaultBases = (PLONE_APP_CONTENTTYPES_FIXTURE,)
 
     def setUpZope(self, app, configurationContext):
+        import collective.lineage
+        self.loadZCML(package=collective.lineage)
+        import lineage.registry
+        self.loadZCML(package=lineage.registry)
+        import lineage.themeselection
+        self.loadZCML(package=lineage.themeselection)
+        import lineage.controlpanels
         self.loadZCML(package=lineage.controlpanels)
 
     def setUpPloneSite(self, portal):
