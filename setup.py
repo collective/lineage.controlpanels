@@ -38,6 +38,7 @@ setup(
     zip_safe=False,
     install_requires=[
         'setuptools',
+        'collective.lineage',
     ],
     extras_require={
         'test': [
