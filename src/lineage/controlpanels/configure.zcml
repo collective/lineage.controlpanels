@@ -8,6 +8,14 @@
   <!-- needed for control panel permission -->
   <include package="Products.CMFPlone.controlpanel" />
 
+  <browser:page
+      name="is_subsite_enabled"
+      for="*"
+      class=".actions.ActionAvailableView"
+      permission="zope2.View"
+      /><!-- no layer here, so that it can be called without lineage.themeselection installed -->
+
+
   <!-- Control Panel Overview -->
   <browser:page
       name="overview-controlpanel"
