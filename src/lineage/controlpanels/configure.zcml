@@ -7,7 +7,6 @@
 
   <!-- needed for control panel permission -->
   <include package="Products.CMFPlone.controlpanel" />
-  <include package="lineage.themeselection" />
 
   <!-- Control Panel Overview -->
   <browser:page

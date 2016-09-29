@@ -38,7 +38,6 @@ setup(
     zip_safe=False,
     install_requires=[
         'setuptools',
-        'lineage.themeselection',
     ],
     extras_require={
         'test': [
