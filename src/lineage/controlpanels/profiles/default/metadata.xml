@@ -2,5 +2,7 @@
 <metadata>
   <version>1</version>
   <dependencies>
+    <dependency>profile-collective.lineage:default</dependency>
+    <dependency>profile-lineage.registry:default</dependency>
   </dependencies>
 </metadata>

@@ -7,8 +7,7 @@ lineage.controlpanels
 =====================
 
 .. warning::
-    THIS IS STILL EXPERIMENTAL CODE!
-    ... and wasn't used in production yet.
+    ALPHA: THIS IS STILL EXPERIMENTAL CODE!
 
 Allows Lineage child site specific configurations for plone.registry based controlpanels.
 
@@ -51,19 +50,29 @@ Install lineage.controlpanels by adding it to your buildout::
 
 and then running ``bin/buildout``
 
+Source Code and Contributions
+-----------------------------
 
-Contribute
-----------
+If you want to help with the development (improvement, update, bug-fixing, ...)
+of ``lineage.controlpanels`` this is a great idea!
 
-- Issue Tracker: https://github.com/collective/lineage.controlpanels/issues
-- Source Code: https://github.com/collective/lineage.controlpanels
+The code is located in the
+`github collective <https://github.com/collective/lineage.controlpanels>`_.
+
+You can clone it or `get access to the github-collective
+<http://collective.github.com/>`_ and work directly on the project.
+
+Maintainer is Johannes Raggam and the BlueDynamics Alliance developer team. We
+appreciate any contribution and if a release is needed to be done on pypi,
+please just contact one of us
+`dev@bluedynamics dot com <mailto:dev@bluedynamics.com>`_
 
 
-Support
--------
+Contributors
+------------
 
-If you are having issues, please let us know.
-We have a mailing list located at: project@example.com
+- Jens W. Klein <jens@bluedynamics.com>
+- Daniel Widerin <daniel@widerin.net>
 
 
 License

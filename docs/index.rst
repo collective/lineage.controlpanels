@@ -1,5 +1,0 @@
-====================
-lineage.controlpanels
-====================
-
-User documentation

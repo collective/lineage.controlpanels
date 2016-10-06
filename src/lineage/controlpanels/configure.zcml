@@ -138,7 +138,7 @@
       name="default"
       title="Lineage: Plone Controlpanels in Child Sites"
       directory="profiles/default"
-      description="Extension to allow child-site specific configurations with Plone controlpanels."
+      description="Extension lineage.controlpanels to allow child-site specific configurations with Plone controlpanels."
       provides="Products.GenericSetup.interfaces.EXTENSION"
       />
   <genericsetup:registerProfile

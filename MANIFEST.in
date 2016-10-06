@@ -1,4 +1,3 @@
 graft src/lineage
-graft docs
 include *.rst
 global-exclude *.pyc

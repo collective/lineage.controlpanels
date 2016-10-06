@@ -4,7 +4,7 @@ from setuptools import setup
 
 
 version = '1.0a1'
-short_description = u"Plone controlpanels for Lineage sites"
+short_description = u'Plone controlpanels for Lineage sites'
 long_description = u'\n\n'.join([
     open('README.rst').read(),
     open('CHANGES.rst').read(),
@@ -18,13 +18,14 @@ setup(
     long_description=long_description,
     # Get more from https://pypi.python.org/pypi?%3Aaction=list_classifiers
     classifiers=[
-        "Environment :: Web Environment",
-        "Framework :: Plone",
-        "Framework :: Plone :: 5.1",
-        "Programming Language :: Python",
-        "Programming Language :: Python :: 2.7",
-        "Operating System :: OS Independent",
-        "License :: OSI Approved :: GNU General Public License v2 (GPLv2)",
+        'Environment :: Web Environment',
+        'Framework :: Plone',
+        'Framework :: Plone :: 5.0',
+        'Framework :: Plone :: 5.1',
+        'Programming Language :: Python',
+        'Programming Language :: Python :: 2.7',
+        'Operating System :: OS Independent',
+        'License :: OSI Approved :: GNU General Public License v2 (GPLv2)',
     ],
     keywords='Python Plone',
     author='Johannes Raggam',
@@ -37,8 +38,9 @@ setup(
     include_package_data=True,
     zip_safe=False,
     install_requires=[
-        'setuptools',
         'collective.lineage',
+        'lineage.registry'
+        'setuptools',
     ],
     extras_require={
         'test': [
