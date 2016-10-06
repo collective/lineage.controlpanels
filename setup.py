@@ -3,7 +3,7 @@ from setuptools import find_packages
 from setuptools import setup
 
 
-version = '1.0a1'
+version = '1.0a2.dev0'
 short_description = u'Plone controlpanels for Lineage sites'
 long_description = u'\n\n'.join([
     open('README.rst').read(),
