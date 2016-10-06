@@ -38,8 +38,8 @@ setup(
     include_package_data=True,
     zip_safe=False,
     install_requires=[
-        'collective.lineage',
-        'lineage.registry'
+        'collective.lineage>=2.1',
+        'lineage.registry>=1.3.3',
         'setuptools',
     ],
     extras_require={
