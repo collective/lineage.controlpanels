@@ -13,7 +13,7 @@
       for="*"
       class=".actions.ActionAvailableView"
       permission="zope2.View"
-      /><!-- no layer here, so that it can be called without lineage.themeselection installed -->
+      /><!-- no layer here, so that it can be called without lineage.controlpanelis installed -->
 
 
   <!-- Control Panel Overview -->
