@@ -3,10 +3,10 @@
     xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
     xmlns:browser="http://namespaces.zope.org/browser">
 
-  <includeDependencies package="." />
-
   <!-- needed for control panel permission -->
   <include package="Products.CMFPlone.controlpanel" />
+  <include package="collective.lineage" />
+  <include package="lineage.registry" />
 
   <browser:page
       name="is_subsite_enabled"
