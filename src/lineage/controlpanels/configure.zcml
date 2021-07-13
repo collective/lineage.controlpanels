@@ -1,7 +1,8 @@
 <configure
     xmlns="http://namespaces.zope.org/zope"
     xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
-    xmlns:browser="http://namespaces.zope.org/browser">
+    xmlns:browser="http://namespaces.zope.org/browser"
+    xmlns:zcml="http://namespaces.zope.org/zcml">
 
   <!-- needed for control panel permission -->
   <include package="Products.CMFPlone.controlpanel" />
@@ -140,6 +141,15 @@
       directory="profiles/default"
       description="Extension lineage.controlpanels to allow child-site specific configurations with Plone controlpanels."
       provides="Products.GenericSetup.interfaces.EXTENSION"
+      zcml:condition="not-have plone-60"
+      />
+  <genericsetup:registerProfile
+      name="default"
+      title="Lineage: Plone6 Controlpanels in Child Sites"
+      directory="profiles/default6"
+      description="Extension lineage.controlpanels to allow child-site specific configurations with Plone controlpanels."
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      zcml:condition="have plone-60"
       />
   <genericsetup:registerProfile
       name="uninstall"
