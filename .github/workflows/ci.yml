@@ -8,11 +8,13 @@ on:
     branches:
       - "main"
       - "master"
+      - "features/buildout-tox"
       - "!releases/**"
   pull_request:
     branches:
       - "main"
       - "master"
+      - "features/buildout-tox"
 
 jobs:
   ci:
