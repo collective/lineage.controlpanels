@@ -8,14 +8,14 @@ from Products.CMFPlone.interfaces import ISiteSchema
 from zope.component import getUtility
 
 import plone.api.content
-import unittest2 as unittest
+import unittest
 
 
 # Red pixel with filename pixel.png
-LOGO_1_BASE64 = "filenameb64:cGl4ZWwucG5n;datab64:iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAADElEQVQI12P4z8AAAAMBAQAY3Y2wAAAAAElFTkSuQmCC"  # noqa
+LOGO_1_BASE64 = b"filenameb64:cGl4ZWwucG5n;datab64:iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAADElEQVQI12P4z8AAAAMBAQAY3Y2wAAAAAElFTkSuQmCC"  # noqa
 
 # Green pixel with filename pixelgreen.png
-LOGO_2_BASE64 = "filenameb64:cGl4ZWxncmVlbi5wbmc=;datab64:iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAADElEQVQI12Ng+M8AAAICAQCqKp4nAAAAAElFTkSuQmCC"  # noqa
+LOGO_2_BASE64 = b"filenameb64:cGl4ZWxncmVlbi5wbmc=;datab64:iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAADElEQVQI12Ng+M8AAAICAQCqKp4nAAAAAElFTkSuQmCC"  # noqa
 
 
 class SiteControlPanelFunctionalTest(unittest.TestCase):
