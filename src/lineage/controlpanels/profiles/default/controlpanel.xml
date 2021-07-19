@@ -57,12 +57,7 @@
     i18n:attributes="title">
   <permission>Plone Site Setup: Mail</permission>
  </configlet>
- <configlet title="Themes" action_id="PortalSkin" appId="PortalSkin"
-    category="plone-general" condition_expr="not:python:plone_portal_state.navigation_root().restrictedTraverse('@@lineageutils').isChildSite()"
-    icon_expr="string:$portal_url/skins_icon.png"
-    url_expr="string:${portal_url}/@@skins-controlpanel" visible="True"
-    i18n:attributes="title">
-  <permission>Plone Site Setup: Themes</permission>
+ <configlet title="Themes" action_id="PortalSkin" appId="PortalSkin" remove="True">
  </configlet>
  <configlet title="Editing" action_id="EditingSettings" appId="Plone"
     category="plone-content" condition_expr=""
