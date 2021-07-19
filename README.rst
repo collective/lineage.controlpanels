@@ -34,22 +34,26 @@ Not available in Lineage Childsites
 
 The following control panels change global settings. Therefore they are not available in subsites.
 
+- actions-controlpanel (Plone 5.1 and newer)
 - content-controlpanel
 - dexterity-types
 - filter-controlpanel
 - maintenance-controlpanel
 - prefs_install_products_form
+- redirection-controlpanel (Plone 5.2 and newer)
 - resourceregistry-controlpanel
-- security controlpanel
+- security-controlpanel
 - usergroup-groupprefs
 - usergroup-userprefs
 
 
 This is also disabled, but should probably fixed to work with local registries too:
+
 - portal_registry
 
 This one stores it's configuration in the registry but has changes one setting in portal_actions, which would affect all sites.
 Thus disabled.
+
 - syndication-controlpanel
 
 
