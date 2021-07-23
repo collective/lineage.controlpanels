@@ -1,11 +1,13 @@
 # any of...
-.*
+.coverage
+.coverage*
 *.egg-info
 *.log
 *.mo
 *.py?
 *.swp
 # dirs
+.venv/
 bin/
 devsrc/
 buildout-cache/
@@ -16,19 +18,16 @@ include/
 lib/
 local/
 parts/
-src/*
-test.plone_addon/
 var/
 # files
+.installed.cfg
+.mr.developer.cfg
 lib64
 log.html
 output.xml
 pip-selfcheck.json
 report.html
+.vscode/
+.tox/
+reports/
 # excludes
-!.coveragerc
-!.editorconfig
-!.gitattributes
-!.gitignore
-!.travis.yml
-!src/lineage

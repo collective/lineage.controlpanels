@@ -1,6 +1,24 @@
 .. This README is meant for consumption by humans and pypi. Pypi can render rst files so please do not use Sphinx features.
-   If you want to learn more about writing documentation, please check out: http://docs.plone.org/about/documentation_styleguide_addons.html
+   If you want to learn more about writing documentation, please check out: http://docs.plone.org/about/documentation_styleguide.html
    This text does not appear on pypi or github. It is a comment.
+
+.. image:: https://github.com/collective/lineage.controlpanels/workflows/ci/badge.svg
+    :target: https://github.com/collective/lineage.controlpanels/actions
+    :alt: CI Status
+
+.. image:: https://img.shields.io/pypi/v/lineage.controlpanels.svg
+    :target: https://pypi.python.org/pypi/lineage.controlpanels/
+    :alt: Latest Version
+
+.. image:: https://img.shields.io/pypi/status/lineage.controlpanels.svg
+    :target: https://pypi.python.org/pypi/lineage.controlpanels
+    :alt: Egg Status
+
+.. image:: https://img.shields.io/pypi/pyversions/lineage.controlpanels.svg?style=plastic   :alt: Supported - Python Versions
+
+.. image:: https://img.shields.io/pypi/l/lineage.controlpanels.svg
+    :target: https://pypi.python.org/pypi/lineage.controlpanels/
+    :alt: License
 
 =====================
 lineage.controlpanels
