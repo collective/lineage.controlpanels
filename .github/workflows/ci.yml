@@ -9,12 +9,14 @@ on:
       - "main"
       - "master"
       - "features/buildout-tox"
+      - "features/plone52"
       - "!releases/**"
   pull_request:
     branches:
       - "main"
       - "master"
       - "features/buildout-tox"
+      - "features/plone52"
 
 jobs:
   ci:
