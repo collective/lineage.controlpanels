@@ -1,5 +1,6 @@
 graft src/lineage
 graft docs
 include *.rst
-exclude *.cfg
+exclude *.cfg *.txt
+exclude .coveragerc
 global-exclude *.pyc
