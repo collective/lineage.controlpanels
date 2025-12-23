@@ -1,7 +1,5 @@
-# -*- coding: utf-8 -*-
 """Installer for the lineage.controlpanels package."""
 
-from setuptools import find_packages
 from setuptools import setup
 
 version = "2.0.0a1.dev0"

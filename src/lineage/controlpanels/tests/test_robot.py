@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 from lineage.controlpanels.testing import LINEAGE_CONTROLPANELS_ACCEPTANCE_TESTING
 from plone.app.testing import ROBOT_TEST_LEVEL
 from plone.testing import layered

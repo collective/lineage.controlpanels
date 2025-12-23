@@ -1,5 +1,5 @@
-# -*- coding: utf-8 -*-
 """Setup tests for this package."""
+
 from lineage.controlpanels.testing import LINEAGE_CONTROLPANELS_INTEGRATION_TESTING
 from plone import api
 from plone.app.testing import setRoles
