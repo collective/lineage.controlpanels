@@ -55,7 +55,6 @@ setup(
             "plone.app.testing",
             "plone.api",
             "plone.app.contenttypes",
-            "plone.app.robotframework[debug]",
             "plone.testing>=5.0.0",
         ],
     },
