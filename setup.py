@@ -48,14 +48,11 @@ setup(
         # -*- Extra requirements: -*-
         "collective.lineage>=2.1",
         "lineage.registry>=1.3.3",
+        "plone.app.discussion",
     ],
     extras_require={
         "test": [
             "plone.app.testing",
-            # Plone KGS does not use this version, because it would break
-            # Remove if your package shall be part of coredev.
-            # plone_coredev tests as of 2016-04-01.
-            "lineage.themeselection",
             "plone.api",
             "plone.app.contenttypes",
             "plone.app.robotframework[debug]",

@@ -18,9 +18,6 @@ class BrowserLayer(PloneSandboxLayer):
         import lineage.registry
 
         self.loadZCML(package=lineage.registry)
-        import lineage.themeselection
-
-        self.loadZCML(package=lineage.themeselection)
         import lineage.controlpanels
 
         self.loadZCML(package=lineage.controlpanels)
