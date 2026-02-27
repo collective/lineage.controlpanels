@@ -5,7 +5,8 @@ Changelog
 1.1 (unreleased)
 ----------------
 
-- Nothing changed yet.
+- pa.discussion is now an core-addon.
+  [jensens]
 
 
 1.0 (2026-03-31)
