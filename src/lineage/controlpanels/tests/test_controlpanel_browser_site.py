@@ -9,7 +9,6 @@ from zope.component import getUtility
 import plone.api.content
 import unittest
 
-
 # Red pixel with filename pixel.png
 LOGO_1_BASE64 = b"filenameb64:cGl4ZWwucG5n;datab64:iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAADElEQVQI12P4z8AAAAMBAQAY3Y2wAAAAAElFTkSuQmCC"  # noqa
 
