@@ -2,8 +2,8 @@ Changelog
 =========
 
 
-1.0a2 (unreleased)
-------------------
+1.0 (2026-03-31)
+----------------
 
 - Do not autoinclude ZCML.
   [jensens]
