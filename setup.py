@@ -53,8 +53,6 @@ setup(
         "test": [
             "plone.app.testing",
             "plone.api",
-            "plone.app.contenttypes",
-            "plone.testing>=5.0.0",
         ],
     },
     entry_points="""

@@ -1,13 +1,14 @@
-from plone.app.contenttypes.testing import PLONE_APP_CONTENTTYPES_FIXTURE
+from plone import api
 from plone.app.testing import applyProfile
 from plone.app.testing import FunctionalTesting
 from plone.app.testing import IntegrationTesting
+from plone.app.testing import PLONE_FIXTURE
 from plone.app.testing import PloneSandboxLayer
 
 
 class BrowserLayer(PloneSandboxLayer):
 
-    defaultBases = (PLONE_APP_CONTENTTYPES_FIXTURE,)
+    defaultBases = (PLONE_FIXTURE,)
 
     def setUpZope(self, app, configurationContext):
         import collective.lineage
@@ -22,6 +23,9 @@ class BrowserLayer(PloneSandboxLayer):
 
     def setUpPloneSite(self, portal):
         applyProfile(portal, "lineage.controlpanels:default")
+
+        wf_tool = api.portal.get_tool("portal_workflow")
+        wf_tool.setDefaultChain("simple_publication_workflow")
 
 
 LINEAGE_CONTROLPANELS_FIXTURE = BrowserLayer()
