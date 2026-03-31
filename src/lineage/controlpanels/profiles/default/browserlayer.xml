@@ -1,7 +1,6 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="utf-8"?>
 <layers>
-  <layer
-      name="lineage.controlpanels"
-      interface="lineage.controlpanels.interfaces.IBrowserLayer"
-      />
+  <layer interface="lineage.controlpanels.interfaces.IBrowserLayer"
+         name="lineage.controlpanels"
+  />
 </layers>

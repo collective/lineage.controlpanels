@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 from ..testing import LINEAGE_CONTROLPANELS_INTEGRATION_TESTING
 from collective.lineage.utils import enable_childsite
 from plone.app.testing import setRoles
@@ -9,7 +8,6 @@ from zope.component import getUtility
 
 import plone.api.content
 import unittest
-
 
 # Red pixel with filename pixel.png
 LOGO_1_BASE64 = b"filenameb64:cGl4ZWwucG5n;datab64:iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAADElEQVQI12P4z8AAAAMBAQAY3Y2wAAAAAElFTkSuQmCC"  # noqa
@@ -60,35 +58,35 @@ class SiteControlPanelFunctionalTest(unittest.TestCase):
         in a subsite and check, if settings don't overwrite each other.
         """
         data_portal = [
-            {"name": "site_title", "value": u"Main portal"},
+            {"name": "site_title", "value": "Main portal"},
             {"name": "site_logo", "value": LOGO_1_BASE64},
             {"name": "exposeDCMetaTags", "value": True},
             {"name": "enable_sitemap", "value": True},
-            {"name": "webstats_js", "value": u"// dummy js"},
+            {"name": "webstats_js", "value": "// dummy js"},
             {"name": "display_publication_date_in_byline", "value": True},
-            {"name": "icon_visibility", "value": u"enabled"},
-            {"name": "thumb_visibility", "value": u"enabled"},
-            {"name": "toolbar_position", "value": u"side"},
-            {"name": "toolbar_logo", "value": u"some_logo, nonexistent"},
-            {"name": "robots_txt", "value": u"please, no robots"},
-            {"name": "default_page", "value": [u"start.html"]},
-            {"name": "roles_allowed_to_add_keywords", "value": [u"Manager"]},
+            {"name": "icon_visibility", "value": "enabled"},
+            {"name": "thumb_visibility", "value": "enabled"},
+            {"name": "toolbar_position", "value": "side"},
+            {"name": "toolbar_logo", "value": "some_logo, nonexistent"},
+            {"name": "robots_txt", "value": "please, no robots"},
+            {"name": "default_page", "value": ["start.html"]},
+            {"name": "roles_allowed_to_add_keywords", "value": ["Manager"]},
         ]
 
         data_subsite = [
-            {"name": "site_title", "value": u"Sub portal"},
+            {"name": "site_title", "value": "Sub portal"},
             {"name": "site_logo", "value": LOGO_2_BASE64},
             {"name": "exposeDCMetaTags", "value": True},
             {"name": "enable_sitemap", "value": True},
             {"name": "webstats_js", "value": None},
             {"name": "display_publication_date_in_byline", "value": True},
-            {"name": "icon_visibility", "value": u"false"},
-            {"name": "thumb_visibility", "value": u"false"},
-            {"name": "toolbar_position", "value": u"side"},
-            {"name": "toolbar_logo", "value": u"another nonexistent logo"},
-            {"name": "robots_txt", "value": u"more robots!"},
-            {"name": "default_page", "value": [u"start.html"]},
-            {"name": "roles_allowed_to_add_keywords", "value": [u"Manager"]},
+            {"name": "icon_visibility", "value": "false"},
+            {"name": "thumb_visibility", "value": "false"},
+            {"name": "toolbar_position", "value": "side"},
+            {"name": "toolbar_logo", "value": "another nonexistent logo"},
+            {"name": "robots_txt", "value": "more robots!"},
+            {"name": "default_page", "value": ["start.html"]},
+            {"name": "roles_allowed_to_add_keywords", "value": ["Manager"]},
         ]
 
         # Populate main site

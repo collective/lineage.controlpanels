@@ -1,8 +1,9 @@
 <configure
     xmlns="http://namespaces.zope.org/zope"
-    xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
     xmlns:browser="http://namespaces.zope.org/browser"
-    xmlns:zcml="http://namespaces.zope.org/zcml">
+    xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+    xmlns:zcml="http://namespaces.zope.org/zcml"
+    >
 
   <!-- needed for control panel permission -->
   <include package="Products.CMFPlone.controlpanel" />
@@ -127,37 +128,37 @@
 
   <!-- Discussion Control Panel -->
   <browser:page
-      zcml:condition="installed plone.app.discussion"
       name="discussion-controlpanel"
       for="collective.lineage.interfaces.IChildSite"
       class="plone.app.discussion.browser.controlpanel.DiscussionSettingsControlPanel"
       permission="cmf.ManagePortal"
       layer=".interfaces.IBrowserLayer"
+      zcml:condition="installed plone.app.discussion"
       />
 
 
   <genericsetup:registerProfile
       name="default"
       title="Lineage: Plone Controlpanels in Child Sites"
-      directory="profiles/default"
       description="Extension lineage.controlpanels to allow child-site specific configurations with Plone controlpanels."
       provides="Products.GenericSetup.interfaces.EXTENSION"
+      directory="profiles/default"
       zcml:condition="not-have plone-60"
       />
   <genericsetup:registerProfile
       name="default"
       title="Lineage: Plone6 Controlpanels in Child Sites"
-      directory="profiles/default6"
       description="Extension lineage.controlpanels to allow child-site specific configurations with Plone controlpanels."
       provides="Products.GenericSetup.interfaces.EXTENSION"
+      directory="profiles/default6"
       zcml:condition="have plone-60"
       />
   <genericsetup:registerProfile
       name="uninstall"
       title="Lineage: Plone Controlpanels in Child Sites (uninstall)"
-      directory="profiles/uninstall"
       description="Uninstalls the lineage.controlpanels add-on."
       provides="Products.GenericSetup.interfaces.EXTENSION"
+      directory="profiles/uninstall"
       />
 
 </configure>
