@@ -2,7 +2,7 @@
 
 from setuptools import setup
 
-version = "2.0.0a1.dev0"
+version = "2.0.0"
 short_description = "Plone controlpanels for Lineage sites"
 long_description = "\n\n".join(
     [

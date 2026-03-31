@@ -1,3 +1,17 @@
+2.0.0 (2026-03-31)
+------------------
+
+Internal:
+
+
+- Don't depend on plone.app.discussion.
+  [thet]
+- Don't install the plone.app.discussion controlpanel on Plone 6, if plone.app.discussion is not installed.
+  [thet]
+- Update configuration files.
+  [plone devs]
+
+
 Changelog
 =========
 
