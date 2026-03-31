@@ -48,7 +48,6 @@ setup(
         # -*- Extra requirements: -*-
         "collective.lineage>=2.1",
         "lineage.registry>=1.3.3",
-        "plone.app.discussion",
     ],
     extras_require={
         "test": [
