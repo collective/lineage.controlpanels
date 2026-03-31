@@ -345,7 +345,7 @@
   <configlet action_id="discussion"
              appId="plone.app.discussion"
              category="plone-general"
-             condition_expr=""
+             condition_expr="exists:object/aq_parent/@@moderate-comments-enabled"
              icon_expr="string:chat-square-dots"
              title="Discussion"
              url_expr="string:${object/aq_parent/absolute_url}/@@discussion-controlpanel"
