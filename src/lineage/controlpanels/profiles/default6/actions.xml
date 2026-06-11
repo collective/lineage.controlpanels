@@ -11,14 +11,18 @@
             name="plone_setup_subsite"
             i18n:domain="plone"
     >
-      <property name="title" i18n:translate="">Site Setup</property>
-      <property name="description" i18n:translate=""></property>
+      <property name="title"
+                i18n:translate=""
+      >Site Setup</property>
+      <property name="description"
+                i18n:translate=""
+      />
       <property name="icon_expr">string:plone-controlpanel</property>
 
       <property name="available_expr">python:plone_portal_state.navigation_root().restrictedTraverse('@@lineageutils').isChildSite()</property>
       <property name="url_expr">string:${plone_portal_state/navigation_root_url}/@@overview-controlpanel</property>
       <property name="permissions">
-        <element value="Plone Site Setup: Overview"/>
+        <element value="Plone Site Setup: Overview" />
       </property>
       <property name="visible">True</property>
     </object>
@@ -28,8 +32,7 @@
             purge="False"
             i18n:domain="plone"
     >
-      <property
-          name="available_expr">not:python:plone_portal_state.navigation_root().restrictedTraverse(&#x27;@@lineageutils&#x27;).isChildSite()</property>
+      <property name="available_expr">not:python:plone_portal_state.navigation_root().restrictedTraverse(&#x27;@@lineageutils&#x27;).isChildSite()</property>
     </object>
   </object>
 </object>
